@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form id="form" class="form" autocomplete="on">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter User Name" id="username" />
+          <div class="error"></div>
+          <!-- <small id="err-username">Please fill out username..!</small> -->
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="Enter Email" id="email" />
+          <div class="error"></div>
+          <!-- <small id="err-email">Please fill out email..!</small> -->
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <div class="error"></div>
+          <!-- <small id="err-password">Please fill out password..!</small> -->
+        </div>
+        <div class="form-control">
+          <label for="username">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="password2"
+          />
+          <div class="error"></div>
+          <!-- <small id="err-password2">Incorrect password..!</small> -->
+        </div>
+        <button type="submit" id="submitbtn">Submit</button>
+      </form>
+    </div>
+
+    <script src="./js/validations.js"></script>
+  </body>
+</html>
